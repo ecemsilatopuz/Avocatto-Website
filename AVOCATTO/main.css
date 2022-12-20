@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  a {
+    text-decoration: none; /*LİNKLERİN ALTINDAKİ ÇİZGİYİ YOK EDER*/
+    color:#432115;
+  }
+
+html{
+    font-family: "DynaPuff",sans-serif;
+}
