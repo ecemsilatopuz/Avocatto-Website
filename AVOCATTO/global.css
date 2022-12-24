@@ -86,7 +86,7 @@ button {
   
   
   .slider {
-    color: #432115;
+    color:#432115;
     position: relative;
     width: 60rem;
     height: 20rem;
@@ -156,13 +156,11 @@ button {
     position: absolute;
     top: 0;
     left: 0;
-  
     display: flex;
     justify-content: space-between;
     padding: 20px;
     width: 100%;
     height: 100%;
-  
     opacity: 0;
     transform: translatex(-100%);
     transition: transform 250ms linear;
@@ -244,4 +242,58 @@ button {
     }
   }
   
- 
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding in columns */
+  .row {
+    margin: 0 -5px;
+    display: flex;
+   justify-content: center;
+   }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    background-color: #e3f98b73;
+    
+  }
+  .card a{
+    color: #377102;
+    font-size: medium;
+  }
+
+  .card a:hover{
+    color: #57b300;
+  }
+  
+  /* Responsive columns - one column layout (vertical) on small screens */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    
+    }
+  }
+
+  #footer{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem;
+    background-color: #D7AD6F;
+}
